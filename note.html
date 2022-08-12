@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/note-style.css"/>
+</head>
+<body>
+<div class="note">
+    <h1>
+        <div class="stack" style="--stacks: 3;">
+            <span style="--index: 0;">Note Taking Developer</span>
+            <span style="--index: 1;">Note Taking Developer</span>
+            <span style="--index: 2;">Note Taking Developer</span>
+          </div>
+        </h1>
+    <div class="note-input">
+        <h3>Add a new note</h3>
+        <div class="note-wrapper">
+            <input type="text" id="note-title" placeholder="Title of your note"/>
+            <textarea id="note-content" placeholder="Write your note here ..." rows="5"></textarea>
+            <button id="add-note-btn" class="btn" type="button">
+                <span><i class="fas fa-plus"></i></span>
+                Add Note
+            </button>
+
+        </div>
+    </div>
+    <div class="note-list"></div>
+    <button type="button" class="btn" id="delete-all-btn" >
+        <span><i class="fas fa-trash"></i></span>
+        Delete all
+    </button>
+</div>
+
+
+
+
+
+<script src="./js/note-script.js"></script>    
+</body>
+</html>
